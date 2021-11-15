@@ -32,7 +32,6 @@ ex_AOne = {
   \time 4/4
 %MUSIC GOES HERE
  c4 c8 c8 c4 r4 | r4 c4 c8 c8 c4 | r4 c4 c4 c8 c8 | c8[ c8] c8 c8 c4 r4 \bar "|."
-  
 }
 \markup {
     \pad-around #2
