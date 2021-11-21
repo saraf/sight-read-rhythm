@@ -558,3 +558,183 @@ ex_ETwo = {
     }
 }
 %----------------------------------
+
+%===================================
+%Music for FOne
+%===================================
+ex_FOne = {
+    \global
+    \time 3/4
+\stemUp
+%MUSIC GOES HERE
+ c8. c16 c8. r16 r4 | c16[ r16 c16 c16] c16 r8. r8 c8
+ \break
+ c8 c16 c16 c16 c16 c8 c8. c16 | c16 r8. c2 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FOne"
+     }
+    }
+  }
+%Score for exercise FOne
+\score {
+    \new RhythmicStaff \with {
+        instrumentName = ""
+        midiInstrument = "Acoustic Grand"
+    }
+    \ex_FOne
+    \layout { }
+}
+\book {
+    \bookOutputName "Ex-FOne"
+    \score {
+        \new RhythmicStaff \with {
+            instrumentName = ""
+            midiInstrument = "Acoustic Grand"
+        }
+        \ex_FOne
+        \midi {
+            \tempo 4=70
+        }
+    }
+}
+%----------------------------------
+
+%===================================
+%Music for FTwo
+%===================================
+ex_FTwo = {
+    \global
+    \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c16 c16 c16 c16~ c8. r16 r4 c8 c16 c16 | c4~ c16 r8. r2
+ \break
+ c8. c16 c16 c16 c8~ c8 r8 r8 c8 | c16 c16 c4 c8~ c4 r4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FTwo"
+     }
+    }
+  }
+%Score for exercise FTwo
+\score {
+    \new RhythmicStaff \with {
+        instrumentName = ""
+        midiInstrument = "Acoustic Grand"
+    }
+    \ex_FTwo
+    \layout { }
+}
+\book {
+    \bookOutputName "Ex-FTwo"
+    \score {
+        \new RhythmicStaff \with {
+            instrumentName = ""
+            midiInstrument = "Acoustic Grand"
+        }
+        \ex_FTwo
+        \midi {
+            \tempo 4=70
+        }
+    }
+}
+%----------------------------------
+
+%===================================
+%Music for FThree
+%===================================
+ex_FThree = {
+    \global
+    \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c8 c16 c16 c8 c16 r16 c16 c16 c8 c4~ | c8. c16 c16[ r16 c8] c16 c16 c16 r16 r4 
+ \break
+ \time 3/4
+  c16 r8. c16[ r16 c16] r16 c16[ r16 c16] r16 
+ \time 4/4 
+ c16 c16 c4 r8 r8. c16~ c4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FThree"
+     }
+    }
+  }
+%Score for exercise FThree
+\score {
+    \new RhythmicStaff \with {
+        instrumentName = ""
+        midiInstrument = "Acoustic Grand"
+    }
+    \ex_FThree
+    \layout { }
+}
+\book {
+    \bookOutputName "Ex-FThree"
+    \score {
+        \new RhythmicStaff \with {
+            instrumentName = ""
+            midiInstrument = "Acoustic Grand"
+        }
+        \ex_FThree
+        \midi {
+            \tempo 4=70
+        }
+    }
+}
+%----------------------------------
+
+
+%===================================
+%Music for FFour
+%===================================
+ex_FFour = {
+    \global
+    \time 3/4
+\stemUp
+%MUSIC GOES HERE
+ r8 c16 r16 c4~ c8 c16 r16 | r8. c16~ c8 c16 r16 c4~
+ \break
+ c4~ c16[ r16 c16]  r16 c16 c16 c16 c16~ | c16[ r16 c8] c16[ c16 c8] r4 \bar "|."  
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FFour"
+     }
+    }
+  }
+%Score for exercise FFour
+\score {
+    \new RhythmicStaff \with {
+        instrumentName = ""
+        midiInstrument = "Acoustic Grand"
+    }
+    \ex_FFour
+    \layout { }
+}
+\book {
+    \bookOutputName "Ex-FFour"
+    \score {
+        \new RhythmicStaff \with {
+            instrumentName = ""
+            midiInstrument = "Acoustic Grand"
+        }
+        \ex_FFour
+        \midi {
+            \tempo 4=70
+        }
+    }
+}
+%----------------------------------
