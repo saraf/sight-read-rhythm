@@ -55,7 +55,7 @@ ex_AOne = {
   }
 }
 \book {
-  \bookOutputName "Ex-AOne"
+  \bookOutputName "Chapter 5 - Ex-AOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -99,7 +99,7 @@ c4 c8 c8 \tuplet 3/2 {c8 c8 c8} | c16 c16 c16 c16 r4 r8 c8 | \tuplet 3/2 {c8 c8 
   }
 }
 \book {
-  \bookOutputName "Ex-ATwo"
+  \bookOutputName "Chapter 5 - Ex-ATwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -150,7 +150,7 @@ ex_BOne = {
   }
 }
 \book {
-  \bookOutputName "Ex-BOne"
+  \bookOutputName "Chapter 5 - Ex-BOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -194,7 +194,7 @@ ex_BTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Ex-BTwo"
+  \bookOutputName "Chapter 5 - Ex-BTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -238,7 +238,7 @@ ex_BThree = {
   \layout { }
 }
 \book {
-  \bookOutputName "Ex-BThree"
+  \bookOutputName "Chapter 5 - Ex-BThree"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -283,7 +283,7 @@ ex_BFour = {
   \layout { }
 }
 \book {
-  \bookOutputName "Ex-BFour"
+  \bookOutputName "Chapter 5 - Ex-BFour"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -327,7 +327,7 @@ ex_COne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Ex-COne"
+  \bookOutputName "Chapter 5 - Ex-COne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -371,7 +371,7 @@ ex_DOne = {
   }
 }
 \book {
-  \bookOutputName "Ex-DOne"
+  \bookOutputName "Chapter 5 - Ex-DOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -417,7 +417,7 @@ ex_DTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Ex-DTwo"
+  \bookOutputName "Chapter 5 - Ex-DTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -462,7 +462,7 @@ ex_DThree = {
   }
 }
 \book {
-  \bookOutputName "Ex-DThree"
+  \bookOutputName "Chapter 5 - Ex-DThree"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -508,7 +508,7 @@ ex_DFour = {
   \layout { }
 }
 \book {
-  \bookOutputName "Ex-DFour"
+  \bookOutputName "Chapter 5 - Ex-DFour"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -553,7 +553,7 @@ ex_EOne = {
   }
 }
 \book {
-  \bookOutputName "Ex-EOne"
+  \bookOutputName "Chapter 5 - Ex-EOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -598,7 +598,7 @@ ex_FOne = {
   }
 }
 \book {
-  \bookOutputName "Ex-FOne"
+  \bookOutputName "Chapter 5 - Ex-FOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -659,7 +659,7 @@ to notate quarter notes, but the *1/2 means that they only occupy half that valu
   }
 }
 \book {
-  \bookOutputName "Ex-GOne"
+  \bookOutputName "Chapter 5 - Ex-GOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -704,7 +704,7 @@ ex_GTwo = {
   }
 }
 \book {
-  \bookOutputName "Ex-GTwo"
+  \bookOutputName "Chapter 5 - Ex-GTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -751,7 +751,7 @@ c8 c8 c8 r4.  \bar "|."
   }
 }
 \book {
-  \bookOutputName "Ex-GThree"
+  \bookOutputName "Chapter 5 - Ex-GThree"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -798,13 +798,198 @@ ex_GFour = {
   }
 }
 \book {
-  \bookOutputName "Ex-GFour"
+  \bookOutputName "Chapter 5 - Ex-GFour"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
       midiInstrument = "Acoustic Grand"
     }
     \ex_GFour
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for HOne
+%===================================
+ex_HOne = {
+  \global
+  \time 6/8
+\stemUp
+%MUSIC GOES HERE
+ r4. c8 c8 c8 | c4. \tuplet 4/3 {c8 c8 c8 c8} | c4. \tuplet 2/3 {c4*1/2 c4*1/2}  | c8 c8 c8 \tuplet 4/3 {c8 c8 c8 c8}  \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. HOne"
+     }
+    }
+  }
+%Score for exercise HOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_HOne
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Chapter 5 - Ex-HOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_HOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for HTwo
+%===================================
+ex_HTwo = {
+  \global
+  \time 9/8
+\stemUp
+%MUSIC GOES HERE
+ c4. \tuplet 2/3 {r4*1/2 c4*1/2} c8[ c8 c8] | \tuplet 4/3 {c8 c8 c8 c8~} c4 c8 c4.~ 
+ \break
+\tuplet 2/3 {c4*1/2 c4*1/2} \tuplet 4/3 {c8 c8 c8 c8} r4 c8 | c4 c8 r4. \tuplet 2/3 {c4*1/2 r4*1/2}  \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. HTwo"
+     }
+    }
+  }
+%Score for exercise HTwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_HTwo
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Chapter 5 - Ex-HTwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_HTwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for IOne
+%===================================
+ex_IOne = {
+  \global
+  \time 6/8
+\stemUp
+%MUSIC GOES HERE
+ c8 c8 c8 \tuplet 4/3 {r8 c8 c8 c8} | 
+ \tuplet 4/3 {c8 c8 c8 r8} r4 c8 | 
+ c8 c4 \tuplet 4/3 {c4 c8 c8 } | 
+ \tuplet 4/3 {c8[ c8 r8 c8] } c8 c8 r8 \bar "|."
+}
+
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. IOne"
+     }
+    }
+  }
+%Score for exercise IOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_IOne
+  \layout {
+    ragged-right = ##f
+  }
+}
+
+\book {
+  \bookOutputName "Chapter 5 - Ex-IOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_IOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for ITwo
+%===================================
+ex_ITwo = {
+  \global
+  \time 12/8
+\stemUp
+%MUSIC GOES HERE
+ c4. c8 c8 c8 \tuplet 4/3 {c8 c8 c4~} c4 c8 |  
+ \tuplet 4/3 {c8 c8 c8 c8} \tuplet 4/3 {c8 c4.} r4. r8 c8 c8~ | 
+ \break
+ c8 c8 c8 \tuplet 4/3 {r8 c8 c8 r8} \tuplet 4/3 {c8 c8 r4} r4 c8~ |  
+ \tuplet 4/3 {c8 c8 c8 c8} \tuplet 2/3 {r4*1/2 c4*1/2~} \tuplet 4/3 {c8[ r8 c8] r8} c8 r8 r8 \bar "|." 
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. ITwo"
+     }
+    }
+  }
+%Score for exercise ITwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_ITwo
+  \layout { ragged-right = ##f }
+}
+\book {
+  \bookOutputName "Chapter 5 - Ex-ITwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_ITwo
     \midi {
       \tempo 4=70
     }
