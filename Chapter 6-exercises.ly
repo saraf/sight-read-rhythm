@@ -688,6 +688,7 @@ ex_DTwo = {
   \time 1/1
 \stemUp
 %MUSIC GOES HERE
+\set Score.beatStructure = 1,1
  c4 c2 c4 | r4 c2. | r2 c4 c4~ | c4 r4 r2
  \break
  c4 r4 c4 c4 | r4 c2 c4 | c4 c2 r4 | r4 c4 r2 
@@ -717,6 +718,463 @@ ex_DTwo = {
       midiInstrument = "Acoustic Grand"
     }
     \ex_DTwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+
+%===================================
+%Music for EOne
+%===================================
+ex_EOne = {
+  \global
+  \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c8 c16 c16 c16 c16 c16 c32 c32 c32 c32 c32 c32 c8 c4 | r16 c32 c32 c16 c16 c16 c16 c8~ c8 c16 c16 r8 c8~
+ \break
+ c16 c16 c16 c16 
+ c16[ 
+   c32 
+   \set stemLeftBeamCount = 3
+   \set stemRightBeamCount = 1
+   c32 
+   \set stemLeftBeamCount = 1
+   \set stemRightBeamCount = 3
+   c32 
+   \set stemLeftBeamCount = 1
+   \set stemRightBeamCount = 1
+   r32 
+   \set stemLeftBeamCount = 1
+   \set stemRightBeamCount = 3
+   c32 
+   c32] c4. c16 c16 | c32 c32 c8 c16 r16 c8 c32 c32 c2 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. EOne"
+     }
+    }
+  }
+%Score for exercise EOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_EOne
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-EOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_EOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+\pageBreak
+
+%===================================
+%Music for ETwo
+%===================================
+ex_ETwo = {
+  \global
+  \time 2/2
+\stemUp
+%MUSIC GOES HERE
+ c8 c8 c8 c8 c16[ c16 c16 c16] c8[ c8] 
+ | r8 c8 c16[ c16 c8] c16[ c16] c4.  
+ \break
+ c8 c4 c16 c16~ c16[ c16 c8] c16 c16 c16 c16 | 
+ r8 c16[ c16] c8 r8 c4. r8 \bar "|." 
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. ETwo"
+     }
+    }
+  }
+%Score for exercise ETwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_ETwo
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-ETwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_ETwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for FOne
+%===================================
+ex_FOne = {
+  \global
+  \time 4/8
+\stemUp
+%MUSIC GOES HERE
+ c8 c8 c8 c16 c16 | \tuplet 3/2 {c16 c16 c16} c4 c16 c16~ | c16 c16 c8 c4~ | \tuplet 3/2 {c16 c16 c16} c4. \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FOne"
+     }
+    }
+  }
+%Score for exercise FOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_FOne
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-FOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_FOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for FTwo
+%===================================
+ex_FTwo = {
+  \global
+  \time 1/1
+\stemUp
+%MUSIC GOES HERE
+ c2. c4 | c2 c2 | \tuplet 3/2 {c2 c2 c2} | c1 \bar "|." 
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FTwo"
+     }
+    }
+  }
+%Score for exercise FTwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_FTwo
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-FTwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_FTwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for GOne
+%===================================
+ex_GOne = {
+  \global
+  \time 2/2
+\stemUp
+%MUSIC GOES HERE
+ c2 c4 c4 | \tuplet 3/2 {c2 c2 c2} | 
+ \time 3/2
+ c4 c8 c8 c4 c4~ c8 c4.~ |   
+ \time 2/2
+ c4 r4 r2 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. GOne"
+     }
+    }
+  }
+%Score for exercise GOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_GOne
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-GOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_GOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for HOne
+%===================================
+ex_HOne = {
+  \global
+  \time 4/4
+\stemUp
+%MUSIC GOES HERE
+\tuplet 3/2 {c16[ c16 c16} c8] c8 c8 c16 c16 c16 c16 c4 | 
+\time 3/4 
+c8[ \tuplet 3/2 {c16 c16 c16]} c4 r4 | 
+\break
+\time 4/4
+r8 \tuplet 3/2 {c16 c16 c16} c8 c16 c16 c4. \tuplet 3/2 {c16 c16 c16} | 
+ \tuplet 3/2 {
+   c16[ 
+     c16 
+     \set stemRightBeamCount = #1
+     c16
+  } 
+  \tuplet 3/2 {
+       \set stemLeftBeamCount = #1
+       c16 
+       c16 
+       c16]~
+  } c4 r8 8 r4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. HOne"
+     }
+    }
+  }
+%Score for exercise HOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_HOne
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-HOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_HOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+
+%===================================
+%Music for HTwo
+%===================================
+ex_HTwo = {
+  \global
+  \time 2/2
+\stemUp
+%MUSIC GOES HERE
+ c4 \tuplet 3/2 {c8 c8 c8} c4. c8 | c8 c8 c2 \tuplet 3/2 {c8 c8 c8}  
+ \break
+ r2 \tuplet 3/2 {c8 c8 c8} c4 | c2. r4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. HTwo"
+     }
+    }
+  }
+%Score for exercise HTwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_HTwo
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-HTwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_HTwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for IOne
+%===================================
+ex_IOne = {
+  \global
+  \time 6/8
+\stemUp
+%MUSIC GOES HERE
+ c8[ c8 c8] c8[ c8 \tuplet 3/2 {c16 c16 c16]} | 
+ r8 c8.[ c16] \tuplet 3/2 {c16 c16 c16}  c4 |
+ \break
+ c8[ \tuplet 3/2 {c16 c16 c16} c8] 4.~ | 
+ 16 16 16 16 8 4. \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. IOne"
+     }
+    }
+  }
+%Score for exercise IOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_IOne
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-IOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_IOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for ITwo
+%===================================
+ex_ITwo = {
+  \global
+  \time 6/4
+\stemUp
+%MUSIC GOES HERE
+ c2 c4 c4 \tuplet 3/2 {c8 c8 c8} c4~ | 
+ c4 c2 \tuplet 3/2 {c8 
+ c8 
+ \set stemRightBeamCount = 0
+ c8} 
+ \tuplet 3/2 {
+   \set stemLeftBeamCount = 0
+   c8 c8 c8} c4~ | 
+ \break
+ c4 c4. c8 
+ \tuplet 3/2 {
+   c8 c8 
+ \set stemRightBeamCount = 0
+ c8} 
+ \tuplet 3/2 {
+ \set stemLeftBeamCount = 0
+   c8 c8 
+  \set stemRightBeamCount = 0
+   c8} 
+  \tuplet 3/2 {
+   \set stemLeftBeamCount = 0
+    c8 c8 c8} | c2. r2. \bar "|." 
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. ITwo"
+     }
+    }
+  }
+%Score for exercise ITwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_ITwo
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-ITwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_ITwo
     \midi {
       \tempo 4=70
     }
