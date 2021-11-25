@@ -1181,3 +1181,279 @@ ex_ITwo = {
   }
 }
 %----------------------------------
+
+%===================================
+%Music for JOne
+%===================================
+ex_JOne = {
+  \global
+  \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c4 \tuplet 3/2 {c8 c8 c8} \tuplet 3/2 {c4 c4 c8 c8}  | c8 c8 \tuplet 3/2 {c8 c16 c16 c8~} 4. \tuplet 3/2 {c16 c16 c16}  
+ \break
+ \tuplet 3/2 {c8 c8 
+  \tuplet 3/2 {c16 c16 c16}
+ } c4 \tuplet 3/2 {c4 c4. c8} | c16 c16 c8 r8 8~ 4 r4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. JOne"
+     }
+    }
+  }
+%Score for exercise JOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_JOne
+  \layout { }
+}
+\book {
+  \bookOutputName "Ex-JOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_JOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for KOne
+%===================================
+ex_KOne = {
+  \global
+  \time 6/4
+\stemUp
+%MUSIC GOES HERE
+ c4 c4 c4 \tuplet 2/2 {c2*3/4 c2*3/4} | \tuplet 2/2 {r2*3/4 c2*3/4} c2. | 
+ 2 4 \tuplet 2/2 {c2*3/4 c2*3/4} | 2.~ 2 r4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. KOne"
+     }
+    }
+  }
+%Score for exercise KOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_KOne
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-KOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_KOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for KTwo
+%===================================
+ex_KTwo = {
+  \global
+  \time 6/16
+\stemUp
+%MUSIC GOES HERE
+ c16 c16 c16 c8. |\tuplet 2/2 {c8*3/4 c8*3/4} c8 c16 | r16 c16 c16  \tuplet 2/2 {r8*3/4 c8*3/4} | c8. c16 r16 r16 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. KTwo"
+     }
+    }
+  }
+%Score for exercise KTwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_KTwo
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-KTwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_KTwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+
+%===================================
+%Music for KThree
+%===================================
+ex_KThree = {
+  \global
+  \time 6/8
+\stemUp
+%MUSIC GOES HERE
+ c8 c8 c8 c4 c8 |  
+\tuplet 2/2 {c4*3/4 c4*3/4} 
+\tuplet 2/2 {c4*1/2 c8 c8} | 
+c4 c8 c8[ c8 c8] |
+\tuplet 2/2 {r4*1/2 c8 c8} r4. \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. KThree"
+     }
+    }
+  }
+%Score for exercise KThree
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_KThree
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-KThree"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_KThree
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for LOne
+%===================================
+ex_LOne = {
+  \global
+  \time 6/4
+\stemUp
+%MUSIC GOES HERE
+ c4 c4 c4 \tuplet 4/3 {c4 c4 c4 c4} |
+ c2 c4 c2.~ | 
+ \tuplet 4/3 {c4 c4 c4 c4} c4 c4 c8 c8 | 
+ c4 r4 c4~ c2. \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. LOne"
+     }
+    }
+  }
+%Score for exercise LOne
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_LOne
+  \layout {
+    ragged-right = ##f
+   }
+}
+\book {
+  \bookOutputName "Ex-LOne"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_LOne
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for LTwo
+%===================================
+ex_LTwo = {
+  \global
+  \time 6/16
+\stemUp
+%MUSIC GOES HERE
+  c8. c16 c16 c16 | c8 c16 \tuplet 4/3 {c16 c16 c16 c16} | 
+  r8. \tuplet 4/3 {c16 c16 c16 c16~} | c8. r8.  \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. LTwo"
+     }
+    }
+  }
+%Score for exercise LTwo
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_LTwo
+  \layout {
+    ragged-right = ##f
+  }
+}
+\book {
+  \bookOutputName "Ex-LTwo"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_LTwo
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
