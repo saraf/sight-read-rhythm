@@ -1,10 +1,8 @@
 \version "2.22.1"
 \header {
-  dedication = "To my family"
   title = "Sight Read Any Rhythm Instantly"
   subtitle = "Exercises"
-  subsubtitle = "Chapter 1"
-  instrument = "Piano"
+  subsubtitle = "Chapter 2"
   composer = "Mark Phillips"
 }
 \paper {
@@ -12,6 +10,7 @@
 }
 
 \layout {
+  indent = 0\cm
   \context {
     \Voice
     \consists "Melody_engraver"
@@ -23,59 +22,61 @@ global = {
   \key c \major
   \time 4/4
 }
- 
-%===================================
-%Music for A-One
-%===================================
-exAOne = \relative c' {
-  \global
-    \time 2/4
-    %c4 c4 c16 c16 c16 c16 c4 | c8 c8 c8 c8 c8 c8 c8 c8 
-    c2 | c4 c4 | c4 c4 | c2 | c4 c4 | c4 c4 | c2 | c2
-}
 
+%===================================
+%Music for AOne
+%===================================
+ex_AOne = {
+  \global
+  \time 4/4
+%MUSIC GOES HERE
+ c4 c8 c8 c4 r4 | r4 c4 c8 c8 c4 | r4 c4 c4 c8 c8 | c8[ c8] c8 c8 c4 r4 \bar "|."
+}
 \markup {
     \pad-around #2
     \fill-line {
-      \center-column {
+       \center-column {
       \huge \italic "Ex. AOne"
      }
     }
   }
-
-%Score for exercise A-One
+%Score for exercise AOne
 \score {
   \new RhythmicStaff \with {
     instrumentName = ""
     midiInstrument = "Acoustic Grand"
   }
-  \exAOne
-    \layout { }
+  \ex_AOne
+  \layout{
+		ragged-right=##f
+	}
 }
-
 \book {
-  \bookOutputName "Chapter 1 - Ex_A_One"
+  \bookOutputName "Chapter 2 - Ex-AOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
       midiInstrument = "Acoustic Grand"
     }
-    \exAOne
+    \ex_AOne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
 %----------------------------------
+
 
 %===================================
 %Music for ATwo
 %===================================
 ex_ATwo = {
   \global
-  \time 2/4
-  %MUSIC GOES HERE
-  c4 c4 | c2 | c4 c4 | c2 | c2 | c4 c4 | c4 c4 | c2 \bar "|." 
+  \time 3/4
+\stemUp
+%MUSIC GOES HERE
+c2 c8 c8 | c4 c4 c4 | c8 c8 c2~ | c2. \bar "|."
+  
 }
 \markup {
     \pad-around #2
@@ -92,10 +93,12 @@ ex_ATwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_ATwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-ATwo"
+  \bookOutputName "Chapter 2 - Ex-ATwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -103,7 +106,51 @@ ex_ATwo = {
     }
     \ex_ATwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for AThree
+%===================================
+ex_AThree = {
+  \global
+  \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c8 c8 c8 c8 r2| r4 c8 c8 c8 c8 r4 | r2 c8 c8 c8 c8 | r1  \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. AThree"
+     }
+    }
+  }
+%Score for exercise AThree
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_AThree
+  \layout{
+		ragged-right=##f
+	}
+}
+\book {
+  \bookOutputName "Chapter 2 - Ex-AThree"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_AThree
+    \midi {
+      \tempo 4=70
     }
   }
 }
@@ -114,9 +161,11 @@ ex_ATwo = {
 %===================================
 ex_BOne = {
   \global
-  \time 3/4
+  \time 2/4
+\stemUp
 %MUSIC GOES HERE
-  c4 c4 c4 | c2 c4 | c4 c2 | c2. \bar "|." 
+ c4_"D" r8_"U" c8 | c8_"B" c8 r4_"N" | c4_"D" c8_"B" c8 | c8_"D" r8_"U" r4 | r2_"N" 
+ r4_"N" c8_"B" c8 | c8_"D" r8 r8_"U" c8 | c8_"D" r8 r4_"N"  \bar "|."
 }
 \markup {
     \pad-around #2
@@ -126,6 +175,13 @@ ex_BOne = {
      }
     }
   }
+
+
+  \markup {
+    \fill-line {
+      \center-column { \italic \teeny "Attack on -> D: Downbeat only U: Upbeat only B: Both N: Neither" }
+    }
+  }
 %Score for exercise BOne
 \score {
   \new RhythmicStaff \with {
@@ -133,10 +189,12 @@ ex_BOne = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_BOne
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-BOne"
+  \bookOutputName "Chapter 2 - Ex-BOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -144,7 +202,7 @@ ex_BOne = {
     }
     \ex_BOne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -156,8 +214,10 @@ ex_BOne = {
 ex_BTwo = {
   \global
   \time 3/4
+\stemUp
 %MUSIC GOES HERE
- c2. | c4 c4 c4 | c2 c4 | c2. \bar "|." 
+ r4_"1" r4_"2" c4_"3" | c4_"1" r8_"2" c8 c4_"3" | c4_"1" r4_"2" r8 c8_"3" | c4_"1" r4_"2" r4_"3" \bar "|."
+  
 }
 \markup {
     \pad-around #2
@@ -174,10 +234,12 @@ ex_BTwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_BTwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-BTwo"
+  \bookOutputName "Chapter 2 - Ex-BTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -185,7 +247,53 @@ ex_BTwo = {
     }
     \ex_BTwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for BThree
+%===================================
+ex_BThree = {
+  \global
+  \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c2_"1" c4_"3" c8_"4" c8 | r8_"1" c8 r8_"2" c8 r2_"4" | r8_"1" c8 r8_"2" c8 r8_"3" c8 r8_"4" c8 | r1_"1" \bar "|."
+  
+}
+
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. BThree"
+     }
+    }
+  }
+%Score for exercise BThree
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_BThree
+  \layout{
+		ragged-right=##f
+	}
+}
+\book {
+  \bookOutputName "Chapter 2 - Ex-BThree"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_BThree
+    \midi {
+      \tempo 4=70
     }
   }
 }
@@ -197,8 +305,9 @@ ex_BTwo = {
 ex_COne = {
   \global
   \time 4/4
+\stemUp
 %MUSIC GOES HERE
-  c2 c4 c4 | c4 c4 c2 | c4 c4 c4 c4 | c1 \bar "|." 
+  c2~ c8 c8 c8 c8 | c8[ c8]~ c8 c8~ c2 | r8 c8 c8[ c8]~ c8 c8 c4 | c1 \bar "|."
 }
 \markup {
     \pad-around #2
@@ -215,10 +324,12 @@ ex_COne = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_COne
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-COne"
+  \bookOutputName "Chapter 2 - Ex-COne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -226,7 +337,7 @@ ex_COne = {
     }
     \ex_COne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -237,9 +348,10 @@ ex_COne = {
 %===================================
 ex_CTwo = {
   \global
-  \time 4/4
+  \time 3/4
+\stemUp
 %MUSIC GOES HERE
-  c2. c4| c1 | c2 c4 c4 | c2 c2 \bar "|." 
+ c2.~ | c4~ c8 c8~ c4~ | c8[ c8]~ c8[ c8]~ c4 | c2 r4  \bar "|."
 }
 \markup {
     \pad-around #2
@@ -256,10 +368,12 @@ ex_CTwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_CTwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-CTwo"
+  \bookOutputName "Chapter 2 - Ex-CTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -267,7 +381,7 @@ ex_CTwo = {
     }
     \ex_CTwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -279,8 +393,10 @@ ex_CTwo = {
 ex_CThree = {
   \global
   \time 4/4
+\stemUp
 %MUSIC GOES HERE
-  c1 | c4 c2 c4 | c2. c4 | c4 c4 c2  \bar "|." 
+ c4 c4 r8 c8 c4~ | c8 c8 c4 r2 | r8 c8 c4 r4 r8 c8 | c4 r4 r2 \bar "|."
+  
 }
 \markup {
     \pad-around #2
@@ -297,10 +413,12 @@ ex_CThree = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_CThree
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-CThree"
+  \bookOutputName "Chapter 2 - Ex-CThree"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -308,7 +426,7 @@ ex_CThree = {
     }
     \ex_CThree
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -320,8 +438,9 @@ ex_CThree = {
 ex_DOne = {
   \global
   \time 3/4
+\stemUp
 %MUSIC GOES HERE
- c4 r4 c4 | c4 r4 r4 | r4 c4 c4 | c2 r4 \bar "|." 
+ c8 c4 c8 c4 | r8 c4 c8 c4~ | c2 r8 c8 | c2 r4 \bar "|."
 }
 \markup {
     \pad-around #2
@@ -338,10 +457,12 @@ ex_DOne = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_DOne
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-DOne"
+  \bookOutputName "Chapter 2 - Ex-DOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -349,7 +470,7 @@ ex_DOne = {
     }
     \ex_DOne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -361,8 +482,9 @@ ex_DOne = {
 ex_DTwo = {
   \global
   \time 4/4
+\stemUp
 %MUSIC GOES HERE
- c2 r4 c4 | c2 c4 r4 | r4 c4 c4 c4 | c2. r4 \bar "|." 
+ c4 c4 r8 c4 c8| c8 c4 c8~ c2 | r4 c8 c8 r8 c4 r8 | c4 r4 r2  \bar "|."
 }
 \markup {
     \pad-around #2
@@ -379,10 +501,12 @@ ex_DTwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_DTwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-DTwo"
+  \bookOutputName "Chapter 2 - Ex-DTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -390,7 +514,7 @@ ex_DTwo = {
     }
     \ex_DTwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -402,8 +526,9 @@ ex_DTwo = {
 ex_EOne = {
   \global
   \time 4/4
+\stemUp
 %MUSIC GOES HERE
- c2 c4 r4 | r2 c4 c4 | c2. r4 | r2 c4 r4 \bar "|." 
+  c4. c8 c4 c4 | c8 c4. r2 | c8 c8 c4 r8 c8 c4 | c1 \bar "|." 
 }
 \markup {
     \pad-around #2
@@ -420,10 +545,12 @@ ex_EOne = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_EOne
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-EOne"
+  \bookOutputName "Chapter 2 - Ex-EOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -431,7 +558,7 @@ ex_EOne = {
     }
     \ex_EOne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -442,9 +569,10 @@ ex_EOne = {
 %===================================
 ex_ETwo = {
   \global
-  \time 4/4
+  \time 3/4
+\stemUp
 %MUSIC GOES HERE
- c4 c4 c4 c4 | c2 r2 | c4 r4 r2 | r4 c2. \bar "|." 
+  r4 4. 8 | 2. | 8 4. 4 | 2 r4  \bar "|."
 }
 \markup {
     \pad-around #2
@@ -461,10 +589,12 @@ ex_ETwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_ETwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-ETwo"
+  \bookOutputName "Chapter 2 - Ex-ETwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -472,7 +602,7 @@ ex_ETwo = {
     }
     \ex_ETwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -484,8 +614,12 @@ ex_ETwo = {
 ex_FOne = {
   \global
   \time 4/4
+\stemUp
 %MUSIC GOES HERE
- c2. c4 | c4 c4 c2 | r1 | r4 c4 c4 r4 \bar "|." 
+  r4 c4~ c8 c8 c4 | c8 c8 r8 c8~ c2 | c2 r4 c4 | c4 c8 c8 r2 | 
+  \break
+  r2 r4 c4~ | c4. c8 r4 c8 c8 | r8 c8 r8 c8 r8 c8 r4 | r2 r4 c8 r8 \bar "|."
+
 }
 \markup {
     \pad-around #2
@@ -502,10 +636,12 @@ ex_FOne = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_FOne
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-FOne"
+  \bookOutputName "Chapter 2 - Ex-FOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -513,7 +649,7 @@ ex_FOne = {
     }
     \ex_FOne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -525,8 +661,11 @@ ex_FOne = {
 ex_FTwo = {
   \global
   \time 3/4
+\stemUp
 %MUSIC GOES HERE
- r4 c4 c4 | c2 c4 | c2. | r1 \bar "|."  
+  r8 c4 c8~ c4 | c4 c8 r8 c4~ | c8 c8  c4. c8 | c2.~ | c4 r4  c8 c8 
+  \break
+  r4 c8 c8 r4 | r8 c8 c8[ c8] r8 c8 | r8 c8~ c2 \bar "|."
 }
 \markup {
     \pad-around #2
@@ -543,10 +682,12 @@ ex_FTwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_FTwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-FTwo"
+  \bookOutputName "Chapter 2 - Ex-FTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -554,7 +695,7 @@ ex_FTwo = {
     }
     \ex_FTwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -565,9 +706,16 @@ ex_FTwo = {
 %===================================
 ex_FThree = {
   \global
-  \time 2/4
+  \time 4/4
+\stemUp
 %MUSIC GOES HERE
- c2 | r1 | c2 | r1 | c4 c4 | c4 c4 | c4 r4 | r1 \bar "|."  
+ c2. r4 | r8 c8 c8[ c8] c4. c8 | r8 c8 c8[ c8] c8 c8 c8 c8 | c8 c8 c4 r4 r8 c8
+ \break
+ c1 | c8 c8 c4 c8 r8 r8 c8 | c8 c8 r8
+ \autoBeamOff
+  c8 c8 c4 c8 | 
+  \autoBeamOn
+  c8 c8 c2. \bar "|."
 }
 \markup {
     \pad-around #2
@@ -584,10 +732,12 @@ ex_FThree = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_FThree
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-FThree"
+  \bookOutputName "Chapter 2 - Ex-FThree"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -595,7 +745,157 @@ ex_FThree = {
     }
     \ex_FThree
     \midi {
-      \tempo 4=50
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for FFour
+%===================================
+ex_FFour = {
+  \global
+  \time 2/4
+\stemUp
+%MUSIC GOES HERE
+  c8[ c8] c8 c8| c4 c8 c8 | c8 c8 c4 | c8 r8 r4 | r4 c4
+  \break
+  c4. c8 | c8 c4 c8 | c2~ | c4 c8 c8 | c8 r8 c8 r8 
+  \break
+  c8[ c8] c8[ c8]~ | c8 c4 r8 | r2 | r4 c4 |  c8 c8 c4 | r8 c8 r4  \bar "|."
+
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FFour"
+     }
+    }
+  }
+%Score for exercise FFour
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_FFour
+  \layout{
+		ragged-right=##f
+	}
+}
+\book {
+  \bookOutputName "Chapter 2 - Ex-FFour"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_FFour
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for FFive
+%===================================
+ex_FFive = {
+  \global
+  \time 4/4
+\stemUp
+%MUSIC GOES HERE
+ c4 c8 c8 c4 c4 | c2. c4 | 
+ \time 3/4
+ c4 c8[ c8]~ c8 c8 | 
+ \time 4/4
+ c4 c4 r8 c8 c4 | 
+  \break
+ c2 r4 c8 c8 | c8 c4.~ c4 c4 | c8 c8 r4 r4 r8 c8 | c8 c4.~ c2 \bar "|." 
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FFive"
+     }
+    }
+  }
+%Score for exercise FFive
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_FFive
+  \layout{
+		ragged-right=##f
+	}
+}
+\book {
+  \bookOutputName "Chapter 2 - Ex-FFive"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_FFive
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+%===================================
+%Music for FSix
+%===================================
+ex_FSix = {
+  \global
+  \time 5/4
+\stemUp
+%MUSIC GOES HERE
+  c4 c8 c8 r4 c4 c4 | c4 r4 r4 c8[ c8] c8 r8 | r8 c8 c8[ c8] r8 c8 r8 c8 c4 | r4 r4 c8[ c8] c8[ c8]~ c4
+  \break
+  \time 4/4
+  r4 c8 r8 c8 r8 c4 | 
+  \time 3/4
+  r8 c8 c4 r4 
+  \time 5/4
+  r4 c2 r4 c8 c8 | c8 c8 c2. r4 \bar "|."
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. FSix"
+     }
+    }
+  }
+%Score for exercise FSix
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_FSix
+  \layout{
+		ragged-right=##f
+	}
+}
+\book {
+  \bookOutputName "Chapter 2 - Ex-FSix"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_FSix
+    \midi {
+      \tempo 4=70
     }
   }
 }
@@ -606,9 +906,12 @@ ex_FThree = {
 %===================================
 ex_GOne = {
   \global
-  \time 4/4
+  \time 2/2
+\stemUp
 %MUSIC GOES HERE
- c2 c2~ | c4 c4 c2 | c2. c4~ | c2 c2 \bar "|."  
+  c2 c4 c4 | r4 c4 r2 | c4 c4 c4 c4 | c4 c4 r2
+  \break
+  c2 c2 | c2 c4 c4 | r4 c4 r4 c4  | c4 c4 c2 \bar "|."
 }
 \markup {
     \pad-around #2
@@ -625,10 +928,12 @@ ex_GOne = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_GOne
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-GOne"
+  \bookOutputName "Chapter 2 - Ex-GOne"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -636,7 +941,7 @@ ex_GOne = {
     }
     \ex_GOne
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -647,10 +952,12 @@ ex_GOne = {
 %===================================
 ex_GTwo = {
   \global
-  \time 3/4
-  c2. | c4 c4 c4 | c2.~ | c4 r4 r4 \bar "|." 
+  \time 2/2
+\stemUp
 %MUSIC GOES HERE
-  
+  c2. c4 | c2 c2~ | c4 c4 r2 | r2 c4 r4
+  \break 
+  c4 c4 c4 c4 | c2 c4 c4~ | c4 c4 c2~ | c4 c2. \bar "|."
 }
 \markup {
     \pad-around #2
@@ -667,10 +974,12 @@ ex_GTwo = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_GTwo
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-GTwo"
+  \bookOutputName "Chapter 2 - Ex-GTwo"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -678,7 +987,7 @@ ex_GTwo = {
     }
     \ex_GTwo
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
@@ -689,9 +998,13 @@ ex_GTwo = {
 %===================================
 ex_GThree = {
   \global
-  \time 4/4
+  \time 3/2
+\stemUp
 %MUSIC GOES HERE
- c2 r4 c4~ | c4 r4 c2 | r2 r4 c4~ | c2. r4 \bar "|." 
+  c2 c2 c2~ | c4 c4 c1 | r2 c2 c2~ | c2 c2 r2 
+  \break
+  r4 c4 c2. c4 | c2 c1~ | c4 c4 c4 c4 c4 c4 | c1. \bar "|." 
+  
 }
 \markup {
     \pad-around #2
@@ -708,10 +1021,12 @@ ex_GThree = {
     midiInstrument = "Acoustic Grand"
   }
   \ex_GThree
-  \layout { }
+  \layout{
+		ragged-right=##f
+	}
 }
 \book {
-  \bookOutputName "Chapter 1 - Ex-GThree"
+  \bookOutputName "Chapter 2 - Ex-GThree"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -719,8 +1034,71 @@ ex_GThree = {
     }
     \ex_GThree
     \midi {
-      \tempo 4=50
+      \tempo 4=70
     }
   }
 }
 %----------------------------------
+
+%===================================
+%Music for GFour
+%===================================
+ex_GFour = {
+  \global
+  \time 3/2
+\stemUp
+%MUSIC GOES HERE
+ c1 c2 | c2. c4 c4 c4 
+ \time 2/2
+ c4 c4 c2~ 
+ \time 3/2
+ c2 c4 c4 c2 
+ \break
+ c2 c2. c4
+ \time 4/2
+ c4 c4 c2 r2 r4 c4
+ \time 3/2
+ c2 c1~ | c4 c4 c2 r2 \bar "|."
+
+}
+\markup {
+    \pad-around #2
+    \fill-line {
+       \center-column {
+      \huge \italic "Ex. GFour"
+     }
+    }
+  }
+%Score for exercise GFour
+\score {
+  \new RhythmicStaff \with {
+    instrumentName = ""
+    midiInstrument = "Acoustic Grand"
+  }
+  \ex_GFour
+  \layout{
+		ragged-right=##f
+	}
+}
+\book {
+  \bookOutputName "Chapter 2 - Ex-GFour"
+  \score {
+    \new RhythmicStaff \with {
+      instrumentName = ""
+      midiInstrument = "Acoustic Grand"
+    }
+    \ex_GFour
+    \midi {
+      \tempo 4=70
+    }
+  }
+}
+%----------------------------------
+
+\markup {
+  \fill-line {
+    \center-column {
+       \huge "End of Chapter Two"
+    }
+  }
+}
