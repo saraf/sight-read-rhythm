@@ -1,10 +1,8 @@
 \version "2.22.1"
 \header {
-  dedication = "To my family"
   title = "Sight Read Any Rhythm Instantly"
   subtitle = "Exercises"
   subsubtitle = "Chapter 5"
-  instrument = ""
   composer = "Mark Phillips"
 }
 \paper {
