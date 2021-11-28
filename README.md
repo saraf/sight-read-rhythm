@@ -28,3 +28,9 @@ Thanks to the wonderful folks at the Music Stackexchange Q&A Site for helping ou
 
 ## How to use this
 Playing the MIDI when studying the book. I used  [Anvil Studio](https://anvilstudio.com/) (which is free of cost) to play the MIDI files - it shows the sheet music score of the MIDI file while playing it, and of course, one can vary the tempo and use it with the built-in metronome to understand each exercise in the book.
+
+If you are using a Mac operating system, I recommend using LMMS https://lmms.io/download#mac 
+You will need to install soundfonts that work with LMMS (sf2 formats) 
+I have tried http://www.schristiancollins.com/generaluser.php 
+and
+https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
