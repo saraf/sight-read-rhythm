@@ -62,7 +62,7 @@ ex_AOne = {
         }
         \ex_AOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -106,7 +106,7 @@ ex_ATwo = {
         }
         \ex_ATwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -150,7 +150,7 @@ ex_BOne = {
         }
         \ex_BOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -195,7 +195,7 @@ ex_BTwo = {
         }
         \ex_BTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -241,7 +241,7 @@ ex_COne = {
         }
         \ex_COne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -285,7 +285,7 @@ ex_CTwo = {
         }
         \ex_CTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -329,7 +329,7 @@ ex_CThree = {
         }
         \ex_CThree
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -373,7 +373,7 @@ ex_CFour = {
         }
         \ex_CFour
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -417,7 +417,7 @@ ex_DOne = {
         }
         \ex_DOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -463,7 +463,7 @@ ex_DTwo = {
         }
         \ex_DTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -507,7 +507,7 @@ ex_EOne = {
         }
         \ex_EOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -551,7 +551,7 @@ ex_ETwo = {
         }
         \ex_ETwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -595,7 +595,7 @@ ex_FOne = {
         }
         \ex_FOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -639,7 +639,7 @@ ex_FTwo = {
         }
         \ex_FTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -686,7 +686,7 @@ ex_FThree = {
         }
         \ex_FThree
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -731,7 +731,7 @@ ex_FFour = {
         }
         \ex_FFour
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -775,7 +775,7 @@ ex_GOne = {
         }
         \ex_GOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -819,7 +819,7 @@ ex_GTwo = {
         }
         \ex_GTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -863,7 +863,7 @@ ex_HOne = {
         }
         \ex_HOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -907,7 +907,7 @@ ex_HTwo = {
         }
         \ex_HTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -952,7 +952,7 @@ ex_HThree = {
         }
         \ex_HThree
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -996,7 +996,7 @@ ex_IOne = {
         }
         \ex_IOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1040,7 +1040,7 @@ ex_ITwo = {
         }
         \ex_ITwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1084,7 +1084,7 @@ ex_JOne = {
         }
         \ex_JOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1130,7 +1130,7 @@ ex_JTwo = {
         }
         \ex_JTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1178,7 +1178,7 @@ ex_KOne = {
         }
         \ex_KOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1225,7 +1225,7 @@ ex_KTwo = {
         }
         \ex_KTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1269,7 +1269,7 @@ ex_LOne = {
         }
         \ex_LOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1316,7 +1316,7 @@ ex_LTwo = {
         }
         \ex_LTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1360,7 +1360,7 @@ ex_MOne = {
         }
         \ex_MOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1408,7 +1408,7 @@ ex_MTwo = {
         }
         \ex_MTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -1423,7 +1423,7 @@ ex_NOne = {
     \time 2/2
 \stemUp
 %MUSIC GOES HERE
- 8 8 8 8 4. 8 | 8 4. r2 | r8 8 8[ 8] r4 8 8~ | 8 4.~ 2 \bar "|."
+ c8 c8 c8 c8 c4. c8 | c8 c4. r2 | r8 c8 c8[ c8] r4 c8 c8~ | c8 c4.~ c2 \bar "|."
 }
 \markup {
     \pad-around #2
@@ -1453,7 +1453,7 @@ ex_NOne = {
         }
         \ex_NOne
         \midi {
-            \tempo 4=70
+            \tempo 2=50
         }
     }
 }
@@ -1497,7 +1497,7 @@ ex_NTwo = {
         }
         \ex_NTwo
         \midi {
-            \tempo 4=70
+            \tempo 2=50
         }
     }
 }
@@ -1542,7 +1542,7 @@ ex_NThree = {
         }
         \ex_NThree
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }

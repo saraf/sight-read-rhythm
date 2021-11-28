@@ -62,7 +62,7 @@ ex_AOne = {
         }
         \ex_AOne
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -105,7 +105,7 @@ ex_ATwo = {
         }
         \ex_ATwo
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -148,7 +148,7 @@ ex_BOne = {
         }
         \ex_BOne
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -191,7 +191,7 @@ ex_BTwo = {
         }
         \ex_BTwo
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -237,7 +237,7 @@ ex_COne = {
         }
         \ex_COne
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -280,7 +280,7 @@ ex_CTwo = {
         }
         \ex_CTwo
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -325,7 +325,7 @@ c8[ c8 c8]~ c8[ c8 c8] c4 c8 c4 c8 | r4 c8 c8[ c8 c8]~ c4 c8 c4. \bar "|."
         }
         \ex_DOne
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -370,7 +370,7 @@ ex_DTwo = {
         }
         \ex_DTwo
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -414,7 +414,7 @@ ex_EOne = {
         }
         \ex_EOne
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -459,7 +459,7 @@ ex_ETwo = {
         }
         \ex_ETwo
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -503,7 +503,7 @@ ex_FOne = {
         }
         \ex_FOne
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -547,7 +547,7 @@ ex_FTwo = {
         }
         \ex_FTwo
         \midi {
-            \tempo 4=70
+            \tempo 8=50
         }
     }
 }
@@ -592,7 +592,7 @@ ex_GOne = {
         }
         \ex_GOne
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -636,7 +636,7 @@ ex_GTwo = {
         }
         \ex_GTwo
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -682,7 +682,7 @@ ex_GThree = {
         }
         \ex_GThree
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
@@ -727,7 +727,7 @@ ex_GFour = {
         }
         \ex_GFour
         \midi {
-            \tempo 4=70
+            \tempo 4=50
         }
     }
 }
