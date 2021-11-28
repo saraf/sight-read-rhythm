@@ -53,7 +53,7 @@ ex_AOne = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-AOne"
+  \bookOutputName "Chapter 6 - Ex-A-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -99,7 +99,7 @@ ex_ATwo = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-ATwo"
+  \bookOutputName "Chapter 6 - Ex-A-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -176,7 +176,7 @@ ex_AThree = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-AThree"
+  \bookOutputName "Chapter 6 - Ex-A-03"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -220,7 +220,7 @@ ex_AFourI = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-AFourI"
+  \bookOutputName "Chapter 6 - Ex-A-04I"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -264,7 +264,7 @@ ex_AFourII = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-AFourII"
+  \bookOutputName "Chapter 6 - Ex-A-04II"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -319,7 +319,7 @@ c16[ \once\set stemRightBeamCount = 1
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-BOne"
+  \bookOutputName "Chapter 6 - Ex-B-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -368,7 +368,7 @@ ex_BTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-BTwo"
+  \bookOutputName "Chapter 6 - Ex-B-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -412,7 +412,7 @@ ex_COne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-COne"
+  \bookOutputName "Chapter 6 - Ex-C-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -483,7 +483,7 @@ ex_CTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-CTwo"
+  \bookOutputName "Chapter 6 - Ex-C-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -527,7 +527,7 @@ ex_CThree = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-CThree"
+  \bookOutputName "Chapter 6 - Ex-C-03"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -571,7 +571,7 @@ ex_CFour = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-CFour"
+  \bookOutputName "Chapter 6 - Ex-C-04"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -620,7 +620,7 @@ ex_CFive = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-CFive"
+  \bookOutputName "Chapter 6 - Ex-C-05"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -664,7 +664,7 @@ ex_DOne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-DOne"
+  \bookOutputName "Chapter 6 - Ex-D-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -709,7 +709,7 @@ ex_DTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-DTwo"
+  \bookOutputName "Chapter 6 - Ex-D-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -769,7 +769,7 @@ ex_EOne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-EOne"
+  \bookOutputName "Chapter 6 - Ex-E-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -817,7 +817,7 @@ ex_ETwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-ETwo"
+  \bookOutputName "Chapter 6 - Ex-E-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -861,7 +861,7 @@ ex_FOne = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-FOne"
+  \bookOutputName "Chapter 6 - Ex-F-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -905,7 +905,7 @@ ex_FTwo = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-FTwo"
+  \bookOutputName "Chapter 6 - Ex-F-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -953,7 +953,7 @@ ex_GOne = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-GOne"
+  \bookOutputName "Chapter 6 - Ex-G-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1012,7 +1012,7 @@ r8 \tuplet 3/2 {c16 c16 c16} c8 c16 c16 c4. \tuplet 3/2 {c16 c16 c16} |
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-HOne"
+  \bookOutputName "Chapter 6 - Ex-H-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1057,7 +1057,7 @@ ex_HTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-HTwo"
+  \bookOutputName "Chapter 6 - Ex-H-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1103,7 +1103,7 @@ ex_IOne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-IOne"
+  \bookOutputName "Chapter 6 - Ex-I-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1166,7 +1166,7 @@ ex_ITwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-ITwo"
+  \bookOutputName "Chapter 6 - Ex-I-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1212,7 +1212,7 @@ ex_JOne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-JOne"
+  \bookOutputName "Chapter 6 - Ex-J-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1257,7 +1257,7 @@ ex_KOne = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-KOne"
+  \bookOutputName "Chapter 6 - Ex-K-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1301,7 +1301,7 @@ ex_KTwo = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-KTwo"
+  \bookOutputName "Chapter 6 - Ex-K-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1350,7 +1350,7 @@ c4 c8 c8[ c8 c8] |
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-KThree"
+  \bookOutputName "Chapter 6 - Ex-K-03"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1397,7 +1397,7 @@ ex_LOne = {
    }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-LOne"
+  \bookOutputName "Chapter 6 - Ex-L-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1442,7 +1442,7 @@ ex_LTwo = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-LTwo"
+  \bookOutputName "Chapter 6 - Ex-L-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1487,7 +1487,7 @@ ex_MOne = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-MOne"
+  \bookOutputName "Chapter 6 - Ex-M-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1565,7 +1565,7 @@ ex_MTwo = {
   \layout { }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-MTwo"
+  \bookOutputName "Chapter 6 - Ex-M-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1613,7 +1613,7 @@ ex_NOne = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-NOne"
+  \bookOutputName "Chapter 6 - Ex-N-01"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1663,7 +1663,7 @@ ex_NTwo = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-NTwo"
+  \bookOutputName "Chapter 6 - Ex-N-02"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
@@ -1720,7 +1720,7 @@ ex_NThree = {
   }
 }
 \book {
-  \bookOutputName "Chapter 6 - Ex-NThree"
+  \bookOutputName "Chapter 6 - Ex-N-03"
   \score {
     \new RhythmicStaff \with {
       instrumentName = ""
