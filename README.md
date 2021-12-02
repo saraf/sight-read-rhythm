@@ -34,3 +34,34 @@ You will need to install soundfonts that work with LMMS (sf2 formats)
 I have tried http://www.schristiancollins.com/generaluser.php 
 and
 https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
+
+### Generating mp3 files 
+
+Once the MIDI files are generated, you can render them as mp3 files as follows:
+1. Move all the MIDI files to a folder
+```
+mkdir output
+mv *.mid output
+```
+2. You can use Timidiy or Fluidsynth to convert from MIDI to wav. I'm using Ubuntu 20.04 on Intel. 
+So, installed the following packages: 
+```
+sudo apt install timidity
+sudo apt install fluid-soundfont-gs fluidsynth freepats pmidi timidity-daemon
+```
+
+Converted all the MIDI to wav files first: 
+```
+for i in *.mid; do fluidsynth -F "$i.wav" UprightPianoKW-20190703.sf2 "$i"; done
+```
+
+(Note: you need to use a SoundFont - sf2 file for rendering the midi to wav
+https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html)
+
+
+Once the wav files are ready, batch converting it into mp3 can be done using lame - something like:
+```
+for i in *.wav; do lame -v "$i" "$i.mp3"; done
+```
+
+And you have all the mp3 files ready!
